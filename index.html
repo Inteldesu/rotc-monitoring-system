@@ -1,0 +1,127 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROTC Monitoring System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay">
+
+  <div class="container">
+
+    <h1>🎖 ROTC Attendance & Equipment Monitoring System</h1>
+
+    <p class="course">
+      Connected to Data Science and Analytics through data collection,
+      attendance tracking, equipment monitoring, and report management.
+    </p>
+
+    <!-- ATTENDANCE -->
+    <div class="card">
+      <h2>Cadet Attendance</h2>
+
+      <input type="text" id="cadetName" placeholder="Cadet Name">
+
+      <select id="rank">
+        <option value="">Select Rank</option>
+        <option>Cadet</option>
+        <option>Corporal</option>
+        <option>Sergeant</option>
+        <option>Lieutenant</option>
+      </select>
+
+      <select id="platoon">
+        <option value="">Select Platoon</option>
+        <option>Alpha</option>
+        <option>Bravo</option>
+        <option>Charlie</option>
+      </select>
+
+      <select id="status">
+        <option value="">Attendance Status</option>
+        <option>Present</option>
+        <option>Late</option>
+        <option>Absent</option>
+      </select>
+
+      <input type="date" id="attendanceDate">
+
+      <button onclick="addAttendance()">Add Attendance</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>Platoon</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <tbody id="attendanceTable"></tbody>
+      </table>
+    </div>
+
+    <!-- EQUIPMENT -->
+    <div class="card">
+      <h2>Borrow Equipment</h2>
+
+      <input type="text" id="borrowerName" placeholder="Cadet Name">
+
+      <select id="equipment">
+        <option value="">Select Equipment</option>
+        <option>Helmet</option>
+        <option>Rifle Replica</option>
+        <option>Boots</option>
+        <option>Uniform</option>
+        <option>Radio</option>
+      </select>
+
+      <input type="number" id="quantity" placeholder="Quantity">
+
+      <input type="date" id="borrowDate">
+
+      <button onclick="addEquipment()">Borrow</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cadet</th>
+            <th>Equipment</th>
+            <th>Quantity</th>
+            <th>Date Borrowed</th>
+          </tr>
+        </thead>
+
+        <tbody id="equipmentTable"></tbody>
+      </table>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="card">
+      <h2>Database Management Summary</h2>
+
+      <div class="summary">
+        <p>Total Attendance Records:
+          <span id="attendanceCount">0</span>
+        </p>
+
+        <p>Total Equipment Borrowed:
+          <span id="equipmentCount">0</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

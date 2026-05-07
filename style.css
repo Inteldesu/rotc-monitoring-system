@@ -1,0 +1,88 @@
+/* style.css */
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200') no-repeat center center/cover;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.75);
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#ffd700;
+    margin-bottom:10px;
+}
+
+.course{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.95);
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:25px;
+    border-left:8px solid darkgreen;
+}
+
+h2{
+    color:darkgreen;
+}
+
+input, select{
+    padding:10px;
+    margin:8px;
+    width:220px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px 20px;
+    background:darkgreen;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:green;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th{
+    background:darkgreen;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+.summary{
+    font-size:18px;
+    color:#222;
+}
